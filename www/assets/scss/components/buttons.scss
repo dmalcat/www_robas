@@ -9,7 +9,7 @@
 	line-height: 1.25;
 	border-radius: $button-radius;
 	cursor: pointer;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 2rem;
 	@include max940px {
 		display: block;
 	}
@@ -18,4 +18,17 @@
 .button--black {
 	background-color: $black;
 	color: $white;
+}
+
+.button--gold {
+	background-color: $gold;
+	color: $white;
+}
+
+.button--blue {
+	
+}
+
+.button--white {
+	
 }
