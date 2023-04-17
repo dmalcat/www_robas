@@ -1,0 +1,21 @@
+.interest {
+    margin-bottom: 0;
+    padding: 5rem 0;
+    background-color: $blue;
+    text-align: center;
+    .subheadline,
+    h2 {
+        color: $white;
+    }
+    
+    .subheadline {
+        text-transform: none;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-family: $font-opensans;
+        line-height: 1.5;
+    }
+}

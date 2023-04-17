@@ -2,6 +2,7 @@
 
 .header {
 	position: relative;
+	padding: 20px 0;
 	background-color: $header-bg-color;
 	@media screen and (max-width: $hamburger-breakpoint) {
 		z-index: 1010;
@@ -15,8 +16,13 @@
 }
 
 .headerLogo {
+	.headerLogo__link {
+		display: block;
+	}
+	
 	.headerLogo__image {
-		max-width: 5rem;
+		display: block;
+		max-width: 80px;
 		width: 100%;
 	}
 }

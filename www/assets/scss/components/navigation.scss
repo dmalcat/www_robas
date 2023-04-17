@@ -22,7 +22,14 @@
 		}
 	}
 
-	.navigation__link {}
+	.navigation__link {
+		font-family: $font-opensans;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $blue;
+	}
 }
 
 .navigation--mobile {

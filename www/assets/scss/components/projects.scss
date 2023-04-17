@@ -1,0 +1,39 @@
+.projects {
+    h2 {
+        font-size: 25px;
+        color: $gold;
+        font-family: $font-opensans;
+        text-transform: uppercase;
+    }
+}
+
+.projectsSlider {
+    margin: 0 -12.25px;
+    
+    .projectsSlider__inner {
+        display: block;
+        margin: 0 12.25px;
+        text-decoration: none;
+    }
+
+    .projectsSlider__img {
+        position: relative;
+        display: block;
+        max-width: 372px;
+        width: 100%;
+        .button {
+            position: absolute;
+            display: block;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 60px;
+            padding: 1.25rem 3rem;
+            box-sizing: border-box;
+            width: 200px;
+        }
+
+        .button--black {
+            color: $black;
+        }
+    }
+}

@@ -7,6 +7,7 @@
 	<div class="cover__visual">
 		<div class="cover__visual-inner">
 			<picture class="cover__image">
+				{*}
 				<source srcset="{$basePath}/assets/images/content/cover/cover_375.webp" media="(max-width: 375px)" type="image/webp">
 				<source srcset="{$basePath}/assets/images/content/cover/cover_375.png" media="(max-width: 375px)" type="image/png">
 				<source srcset="{$basePath}/assets/images/content/cover/cover_640.webp" media="(max-width: 640px)" type="image/webp">
@@ -17,22 +18,309 @@
 				<source srcset="{$basePath}/assets/images/content/cover/cover_1024.png" media="(max-width: 1024px)" type="image/png">
 				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.webp" media="(max-width: 1440px)" type="image/webp">
 				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.png" media="(max-width: 1440px)" type="image/png">
+				{*}
 				<source srcset="{$basePath}/assets/images/content/cover/cover_1920.png" media="(max-width: 1920px)" type="image/png">
+				{*}
 				<source srcset="{$basePath}/assets/images/content/cover/cover_2560.png" media="(max-width: 2560px)" type="image/png">
+				{*}
 				<img src="{$basePath}/assets/images/content/cover/cover_1920.png" alt="">
 			</picture>
 		</div>
 	</div>
 
 	<div class="cover__wrapper wrapper">
-		<h1>
-			The Robas welcome page
-		</h1>
-		<p class="cover__copy">
-			Hello world!
+		<div class="hero">
+			<h1>
+				Zdravé a účelné <br>
+				bydlení je naší <br>
+				prioritou
+			</h1>
+			<div class="cover__button">
+				<a class="button button--gold" href="">Dozvědět se více</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="projects">
+	<div class="projects__wrapper wrapper">
+		<h2>Naše projekty</h2>
+		
+		<div class="projectsSlider" id="project-slider">
+			<div class="projectsSlider__item">
+				<a class="projectsSlider__inner" href="">
+					<h3>
+						Bytové domy <br>
+						Javorová - Dobruška
+					</h3>
+					<span class="projectsSlider__img">
+						<img src="{$basePath}/assets/images/content/projects/javorova.png" alt="">
+						<span class="button button--white">Více</span>
+					</span>
+				</a>
+			</div>
+			<div class="projectsSlider__item">
+				<a class="projectsSlider__inner" href="">
+					<h3>
+						Bytový dům <br>
+						Kostelní Hlavno
+					</h3>
+					<span class="projectsSlider__img">
+						<img src="{$basePath}/assets/images/content/projects/kostelni-hlavno.png" alt="">
+						<span class="button button--white">Více</span>
+					</span>
+				</a>
+			</div>
+			<div class="projectsSlider__item">
+				<a class="projectsSlider__inner">
+					<h3>
+						Rodinný dům <br>
+						v Jánských Lázních
+					</h3>
+					<span class="projectsSlider__img">
+						<img src="{$basePath}/assets/images/content/projects/janske-lazne.png" alt="">
+						<span class="button button--black">Více</span>
+					</span>
+				</a>
+			</div>
+			<div class="projectsSlider__item">
+				<a class="projectsSlider__inner">
+					<h3>
+						Bytové domy <br>
+						Javorová - Dobruška
+					</h3>
+					<span class="projectsSlider__img">
+						<img class="projectsSlider__img" src="{$basePath}/assets/images/content/projects/javorova.png" alt="">
+						<span class="button button--black">Více informací</span>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="usp">
+	<div class="usp__wrapper wrapper">
+		<h2>S čím Vám můžeme pomoci</h2>
+
+		<p class="perex">
+			Nabízíme komplexní developerskou činnost s dlouholetou praxí, kde spojujeme vše potřebné k dosažení zadaného cíle.
 		</p>
-		<div class="cover__button">
-			<a class="button button--black" href="">Cover button</a>
+
+		<p>
+			Pokud máte záměr využít Váš pozemek, nebo chcete realizovat Váš investiční záměr do nové výstavby, rádi Vám pomůžeme s kompletní developerskou přípravou od A až do Z.
+		</p>
+	</div>
+
+	<div class="usp__row">
+		<div class="usp__item">
+			<div class="usp__icon">
+				<img class="icon" src="{$basePath}/assets/images/ui/icons/architecture.svg" alt="">
+			</div>
+			<p>
+				Architektonická činnost <br> a&nbsp;engeneering
+			</p>
+		</div>
+		<div class="usp__item">
+			<div class="usp__icon">
+				<img class="icon" src="{$basePath}/assets/images/ui/icons/marketing.svg" alt="">
+			</div>
+			<p>
+				Prodej <br> a&nbsp;marketing
+			</p>
+		</div>
+		<div class="usp__item">
+			<div class="usp__icon">
+				<img class="icon" src="{$basePath}/assets/images/ui/icons/investment.svg" alt="">
+			</div>
+			<p>
+				Investiční <br> příležitost
+			</p>
+		</div>
+		<div class="usp__item">
+			<div class="usp__icon">
+				<img class="icon" src="{$basePath}/assets/images/ui/icons/consultation.svg" alt="">
+			</div>
+			<p>
+				Poradenská <br> a&nbsp;konzultační činnost
+			</p>
+		</div>
+	</div>
+
+	<div class="row row--center">
+		<a href="" class="button button--white">Dozvědět se více</a>
+	</div>
+</section>
+
+<section class="selling">
+	<div class="selling__wrapper wrapper">
+		<span class="subheadline">Právě prodáváme</span>
+		<div class="selling__slider">
+			<div id="selling-slider">
+				<div class="selling__item">
+					<div class="selling__inner">
+						<div class="selling__col selling__col--copy">
+							<h2>
+								Bytové domy <br>
+								Javorová - Dobruška
+							</h2>
+
+							<p>
+								Nabízíme Vám projekt k výstavbě tří až čtyř bytových domů ve městě Dobruška, které je druhé největší město v okrese Rychnov nad Kněžnou v Královéhradeckém kraji a leží v podhůří Orlických hor v údolí Zlatého potoka. 
+							</p>
+
+							<p>
+								Projekt disponuje právoplatným územním rozhodnutím. 
+							</p>
+
+							<p>
+								Cena a veškeré další podklady na vyžádání. 
+							</p>
+
+							<a href="" class="button button--gold">Dozvědět se více</a>
+						</div>
+					
+						<div class="selling__col selling__col--images">
+							<img class="selling__img" src="{$basePath}/assets/images/content/selling/javorova.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="selling__item">
+					<div class="selling__inner">
+						<div class="selling__col selling__col--copy">
+							<h2>
+								Bytové domy <br>
+								Javorová - Dobruška
+							</h2>
+
+							<p>
+								Nabízíme Vám projekt k výstavbě tří až čtyř bytových domů ve městě Dobruška, které je druhé největší město v okrese Rychnov nad Kněžnou v Královéhradeckém kraji a leží v podhůří Orlických hor v údolí Zlatého potoka. 
+							</p>
+
+							<p>
+								Projekt disponuje právoplatným územním rozhodnutím. 
+							</p>
+
+							<p>
+								Cena a veškeré další podklady na vyžádání. 
+							</p>
+
+							<a href="" class="button button--gold">Dozvědět se více</a>
+						</div>
+						<div class="selling__col selling__col--images">
+							<img class="selling__img" src="{$basePath}/assets/images/content/selling/javorova.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="selling__arrow selling__arrow--prev" id="selling-slider-prev">
+				<img class="arrow" src="{$basePath}/assets/images/ui/icons/arrow-right.svg" alt="">
+			</div>
+			<div class="selling__arrow selling__arrow--next" id="selling-slider-next">
+				<img class="arrow" src="{$basePath}/assets/images/ui/icons/arrow-right.svg" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="interest">
+	<div class="interest__wrapper wrapper">
+		<span class="subheadline">Zajímá Vás některý z projektů nebo služeb?</span>
+		<h2>
+			Kontaktujte nás <br>
+			a domluvte si schůzku
+		</h2>
+
+		<a href="" class="button button--gold">Kontaktovat</a>
+	</div>
+</section>
+
+<section class="about">
+	<div class="about__wrapper wrapper">
+		<h2>Kdo jsme</h2>
+
+		<img class="about__quotes" src="{$basePath}/assets/images/ui/icons/quotes.png" alt="">
+
+		<p class="perex">
+			Jsme česká developerská společnost, založená na profesionalitě, přátelství <br>
+			a důvěře. Nabízíme komplexní servis a služby ve všech oblastech, které <br>
+			souvisejí s bydlením, výstavbou, nebo prodejem nemovitostí. 
+		</p>
+
+		<div class="founders">
+			<div class="founders__item">
+				<img class="founders__photo" src="{$basePath}/assets/images/content/founders/robert-jerie.png" alt="">
+				<strong class="founders__name">Ing. Arch. Robert Jerie</strong>
+				<span class="founders__position">Zakladatel a majitel</span>
+			</div>
+			<div class="founders__item">
+				<img class="founders__photo" src="{$basePath}/assets/images/content/founders/jan-backovsky.png" alt="">
+				<strong class="founders__name">Bc. Jan Bacovský</strong>
+				<span class="founders__position">Zakladatel a majitel</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="contact">
+	<div class="contact__wrapper wrapper">
+		<div class="contact__row">
+			<div class="contact__col contact__col--info">
+				<h2>Kontakt</h2>
+
+				<address class="contact__address">
+					ROBAS Development s.r.o. <br>
+					IČO: 17762995 <br>
+					Kaprova 42/14, Staré Město, <br>
+					110 00 Praha 1
+				</address>
+			</div>
+			<div class="contact__col contact__col--info">
+				<div class="form">
+					{form contactForm}
+					<ul class=error n:if="$form->ownErrors">
+						<li n:foreach="$form->ownErrors as $error">{$error}</li>
+					</ul>
+					<div class="form__inner">
+						<div class="form__group">
+							<div class="form__control">
+								<label n:name=name class="form__label">Jméno a příjmení</label>
+								<input n:name=name type="text" class="form__input">
+							</div>
+							
+						</div>
+						<div class="form__group">
+							<div class="form__control">
+								<label n:name=contact class="form__label">Telefon nebo email</label>
+								<input n:name=contact type="text" class="form__input">
+							</div>
+							<div class="form__control">
+								<label n:name=company class="form__label">Společnost</label>
+								<input n:name=company type="text" class="form__input">
+							</div>
+						</div>
+						<div class="form__group form__group--1c">
+							<div class="form__control">
+								<label n:name=message class="form__label">Vaše zpráva</label>
+								<textarea n:name=message type="text" class="form__textarea"></textarea>
+							</div>
+						</div>
+						<div class="form__control form__control--city">
+							<label n:name=city class="form__label">Město</label>
+							<input n:name=city type="text" class="form__input">
+						</div>
+						<div class="form__group form__group--1c">
+							<div class="form__control">
+								<p>Odesláním souhlasíte se <a href="">zpracováním osobních údajů</a>.</p>
+							</div>
+						</div>
+						<div class="form__group form__group--button">
+							<input n:name=send class="button button--white" value="Odeslat" />
+						</div>
+					</div>
+					{/form}
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

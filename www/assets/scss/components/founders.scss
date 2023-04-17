@@ -1,0 +1,29 @@
+.founders {
+    display: flex;
+    justify-content: center;
+    gap: 7.5rem;
+    margin: 5rem 0;
+
+    .founders__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .founders__photo {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .founders__name {
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $blue;
+    }
+
+    .founders__position {
+        color: $blue;
+        font-size: 18px;
+    }
+}

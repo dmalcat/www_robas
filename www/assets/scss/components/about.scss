@@ -1,0 +1,16 @@
+.about {
+    padding: 5rem 0;
+    background-color: #c0b6ad;
+    color: $white;
+    text-align: center;
+    h2 {
+        font-size: 50px;
+    }
+
+    .about__quotes {
+        display: block;
+        max-width: 65px;
+        width: 100%;
+        margin: 0 auto 3rem;
+    }
+}

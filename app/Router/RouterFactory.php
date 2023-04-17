@@ -48,6 +48,12 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/projekty', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/styleguide', [
 					'presenter' 	=> 'Styleguide',
 					'action' 		=> 'default',

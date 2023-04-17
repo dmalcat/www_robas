@@ -6,29 +6,32 @@
 	text-align: center;
 	text-decoration: none;
 	font-size: 1rem;
-	line-height: 1.25;
+	line-height: 1;
 	border-radius: $button-radius;
 	cursor: pointer;
-	padding: 0.5rem 2rem;
+	padding: 1.25rem 2.75rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	@extend .trans;
 	@include max940px {
 		display: block;
 	}
 }
 
 .button--black {
-	background-color: $black;
+	border: 2px solid $black;
 	color: $white;
 }
 
 .button--gold {
 	background-color: $gold;
 	color: $white;
-}
-
-.button--blue {
-	
+	&:hover {
+		background-color: $blue;
+	}
 }
 
 .button--white {
-	
+	color: $white;
+	border: 2px solid $white;
 }
