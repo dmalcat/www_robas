@@ -60,6 +60,7 @@ di:
 services:
 	- Freshio\Presets\Presets( %presets% )
 	- Freshio\Utils\AssetVersioning( %wwwDir% )
+	- App\Forms\ContactForm
 
 	translator:
 		class: Freshio\Localization\SimpleTranslator

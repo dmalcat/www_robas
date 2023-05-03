@@ -46,9 +46,9 @@ $form-columns-gap: 1rem;
 $form-input-padding-tops: 0.5rem;
 $form-input-padding-sides: 1rem;
 
-$form-input-border-radius: 0.5rem;
+$form-input-border-radius: 0;
 $form-input-border-width: 1px;
-$form-input-border-color: $black;
+$form-input-border-color: #676f67;
 
 $form-input-text-size: $base-font-size;
 
@@ -57,8 +57,9 @@ $form-input-text-color: $black;
 
 
 // Common radius
-$base-radius: 0.5rem;
+$base-radius: 0;
 $button-radius: 0;
+
 
 // Header
 $header-bg-color: $white;

@@ -30,6 +30,9 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 	/** @var string @persistent */
 	public $region;
 
+	/** @var \App\Forms\ContactForm @inject */
+    public $contactForm;
+
 
 	public function startup(): void
 	{
@@ -49,7 +52,7 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 	{
 		$tpl = parent::createTemplate();
 
-		$tpl->setTranslator($this->localization->getTranslator());
+		$tpl->setTranslator($this->localization->getTranslator()); 
 
 		$tpl->addFilter('asset', function($assetPath) use ($tpl) {
 			return $this->assetVersioning->appendVersionSuffix($assetPath, $tpl->basePath);

@@ -4,7 +4,9 @@ $(function() {
 	$('#project-slider').slick({
 		infinite: true,
 		slidesToShow: 3,
-		slidesToScroll: 3
+		slidesToScroll: 1,
+		prevArrow: $('#projects-slider-prev'),
+      	nextArrow: $('#projects-slider-next')
 	});
 
 	$('#selling-slider').slick({

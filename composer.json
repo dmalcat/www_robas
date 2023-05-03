@@ -1,7 +1,7 @@
 {
 	"name": "studiofreshnet/freshbang",
 	"type": "project",
-	"description": "The Robas SFN boilerplate",
+	"description": "The Robas boilerplate",
 	"license": [ "proprietary" ],
 	"authors": [
 		{

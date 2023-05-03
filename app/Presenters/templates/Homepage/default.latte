@@ -7,22 +7,7 @@
 	<div class="cover__visual">
 		<div class="cover__visual-inner">
 			<picture class="cover__image">
-				{*}
-				<source srcset="{$basePath}/assets/images/content/cover/cover_375.webp" media="(max-width: 375px)" type="image/webp">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_375.png" media="(max-width: 375px)" type="image/png">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_640.webp" media="(max-width: 640px)" type="image/webp">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_640.png" media="(max-width: 640px)" type="image/png">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_768.webp" media="(max-width: 768px)" type="image/webp">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_768.png" media="(max-width: 768px)" type="image/png">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_1024.webp" media="(max-width: 1024px)" type="image/webp">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_1024.png" media="(max-width: 1024px)" type="image/png">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.webp" media="(max-width: 1440px)" type="image/webp">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.png" media="(max-width: 1440px)" type="image/png">
-				{*}
 				<source srcset="{$basePath}/assets/images/content/cover/cover_1920.png" media="(max-width: 1920px)" type="image/png">
-				{*}
-				<source srcset="{$basePath}/assets/images/content/cover/cover_2560.png" media="(max-width: 2560px)" type="image/png">
-				{*}
 				<img src="{$basePath}/assets/images/content/cover/cover_1920.png" alt="">
 			</picture>
 		</div>
@@ -46,54 +31,64 @@
 	<div class="projects__wrapper wrapper">
 		<h2>Naše projekty</h2>
 		
-		<div class="projectsSlider" id="project-slider">
-			<div class="projectsSlider__item">
-				<a class="projectsSlider__inner" href="">
-					<h3>
-						Bytové domy <br>
-						Javorová - Dobruška
-					</h3>
-					<span class="projectsSlider__img">
-						<img src="{$basePath}/assets/images/content/projects/javorova.png" alt="">
-						<span class="button button--white">Více</span>
-					</span>
-				</a>
+		<div class="projectsSlider">
+			<div class="projectsSlider__arrows">
+				<div class="projectsSlider__arrow projectsSlider__arrow--prev" id="projects-slider-prev">
+					<img class="arrow" src="{$basePath}/assets/images/ui/icons/arrow-right-full.svg" alt="">
+				</div>
+				<div class="projectsSlider__arrow projectsSlider__arrow--next" id="projects-slider-next">
+					<img class="arrow" src="{$basePath}/assets/images/ui/icons/arrow-right-full.svg" alt="">
+				</div>
 			</div>
-			<div class="projectsSlider__item">
-				<a class="projectsSlider__inner" href="">
-					<h3>
-						Bytový dům <br>
-						Kostelní Hlavno
-					</h3>
-					<span class="projectsSlider__img">
-						<img src="{$basePath}/assets/images/content/projects/kostelni-hlavno.png" alt="">
-						<span class="button button--white">Více</span>
-					</span>
-				</a>
-			</div>
-			<div class="projectsSlider__item">
-				<a class="projectsSlider__inner">
-					<h3>
-						Rodinný dům <br>
-						v Jánských Lázních
-					</h3>
-					<span class="projectsSlider__img">
-						<img src="{$basePath}/assets/images/content/projects/janske-lazne.png" alt="">
-						<span class="button button--black">Více</span>
-					</span>
-				</a>
-			</div>
-			<div class="projectsSlider__item">
-				<a class="projectsSlider__inner">
-					<h3>
-						Bytové domy <br>
-						Javorová - Dobruška
-					</h3>
-					<span class="projectsSlider__img">
-						<img class="projectsSlider__img" src="{$basePath}/assets/images/content/projects/javorova.png" alt="">
-						<span class="button button--black">Více informací</span>
-					</span>
-				</a>
+			<div id="project-slider">
+				<div class="projectsSlider__item">
+					<a class="projectsSlider__inner" href="">
+						<h3>
+							Bytové domy <br>
+							Javorová - Dobruška
+						</h3>
+						<span class="projectsSlider__img">
+							<img src="{$basePath}/assets/images/content/projects/javorova.png" alt="">
+							<span class="button button--white">Více</span>
+						</span>
+					</a>
+				</div>
+				<div class="projectsSlider__item">
+					<a class="projectsSlider__inner" href="">
+						<h3>
+							Bytový dům <br>
+							Kostelní Hlavno
+						</h3>
+						<span class="projectsSlider__img">
+							<img src="{$basePath}/assets/images/content/projects/kostelni-hlavno.png" alt="">
+							<span class="button button--white">Více</span>
+						</span>
+					</a>
+				</div>
+				<div class="projectsSlider__item">
+					<a class="projectsSlider__inner">
+						<h3>
+							Rodinný dům <br>
+							v Jánských Lázních
+						</h3>
+						<span class="projectsSlider__img">
+							<img src="{$basePath}/assets/images/content/projects/janske-lazne.png" alt="">
+							<span class="button button--black">Více</span>
+						</span>
+					</a>
+				</div>
+				<div class="projectsSlider__item">
+					<a class="projectsSlider__inner">
+						<h3>
+							Bytový dům <br>
+							Jesenice
+						</h3>
+						<span class="projectsSlider__img">
+							<img src="{$basePath}/assets/images/content/projects/jesenice.png" alt="">
+							<span class="button button--black">Více informací</span>
+						</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -263,19 +258,28 @@
 </section>
 
 <section class="contact">
-	<div class="contact__wrapper wrapper">
-		<div class="contact__row">
-			<div class="contact__col contact__col--info">
+	<div class="contact__row">
+		<div class="contact__col contact__col--info">
+			<div class="contact__inner">
 				<h2>Kontakt</h2>
 
 				<address class="contact__address">
-					ROBAS Development s.r.o. <br>
+					<strong>ROBAS Development s.r.o.</strong> <br>
 					IČO: 17762995 <br>
 					Kaprova 42/14, Staré Město, <br>
 					110 00 Praha 1
 				</address>
+
+				<span class="contact__availability">
+					TEL: <a class="contact__link" href="+420776598414">+420&nbsp;776&nbsp;598&nbsp;414</a> <br>
+					EMAIL: <a class="contact__link" href="mailto:info@robas-holding.cz">info@robas-holding.cz</a><br>
+					Po - Pá: 9 - 19 hod
+				</span>
 			</div>
-			<div class="contact__col contact__col--info">
+		</div>
+		<div class="contact__col contact__col--form">
+			<div class="contact__inner">
+				<h2>Ozvěte se nám</h2>
 				<div class="form">
 					{form contactForm}
 					<ul class=error n:if="$form->ownErrors">
@@ -284,19 +288,22 @@
 					<div class="form__inner">
 						<div class="form__group">
 							<div class="form__control">
-								<label n:name=name class="form__label">Jméno a příjmení</label>
+								<label n:name=name class="form__label">Jméno</label>
 								<input n:name=name type="text" class="form__input">
 							</div>
-							
+							<div class="form__control">
+								<label n:name=surname class="form__label">Příjmení</label>
+								<input n:name=surname type="text" class="form__input">
+							</div>
 						</div>
 						<div class="form__group">
 							<div class="form__control">
-								<label n:name=contact class="form__label">Telefon nebo email</label>
-								<input n:name=contact type="text" class="form__input">
+								<label n:name=email class="form__label">E-mail</label>
+								<input n:name=email type="text" class="form__input">
 							</div>
 							<div class="form__control">
-								<label n:name=company class="form__label">Společnost</label>
-								<input n:name=company type="text" class="form__input">
+								<label n:name=phone class="form__label">Telefonní číslo</label>
+								<input n:name=phone type="text" class="form__input">
 							</div>
 						</div>
 						<div class="form__group form__group--1c">
@@ -315,7 +322,7 @@
 							</div>
 						</div>
 						<div class="form__group form__group--button">
-							<input n:name=send class="button button--white" value="Odeslat" />
+							<input n:name=send class="button button--blue" value="Odeslat" />
 						</div>
 					</div>
 					{/form}

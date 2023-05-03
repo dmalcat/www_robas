@@ -4,6 +4,7 @@
 	.form__group {
 		display: flex;
 		margin-bottom: 2rem;
+		width: 100%;
 	}
 
 	@for $i from 1 through 10 {
@@ -24,6 +25,13 @@
 
 	.form__control {
 		width: 100%;
+		margin-right: 2rem;
+	}
+
+	.form__control--city {
+		position: absolute;
+		z-index: 0;
+		left: -9899px;
 	}
 
 	.form__input,
@@ -41,6 +49,17 @@
 		&:focus {
 			outline: none;
 		}
+	}
+
+	.form__label {
+		color: #c0b6ad;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.form__input {
+		max-width: 335px;
+		width: 100%;
 	}
 
 	.form__textarea {
