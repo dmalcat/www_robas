@@ -1,6 +1,8 @@
 $(function() {
 	replaceSVG();
 
+	var scroll = new SmoothScroll('a[href*="#"]');
+
 	$('#project-slider').slick({
 		infinite: true,
 		slidesToShow: 3,

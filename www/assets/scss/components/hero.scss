@@ -34,6 +34,10 @@
         font-size: $hero-font-size;
         text-align: left;
 		color: $white;
+        @media screen and (max-width: 1450px) {
+            font-size: 4.5rem;
+        }
+
         @media screen and (max-width: 1270px) {
 			font-size: $hero-font-size - 0.5rem;
 		}
