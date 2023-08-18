@@ -54,6 +54,42 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/projekty/bytove-domy-javorova-dobruska', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'javorovaDobruska',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/projekty/janske-lazne', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'janskeLazne',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/projekty/rodinne-domy-bousov-prodej-parcel', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'bousov',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/projekty/bytovy-dum-jesenice', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'jesenice',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/projekty/hostivar', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'hostivar',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/projekty/byty-kostelni-hlavno', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'kostelniHlavno',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/styleguide', [
 					'presenter' 	=> 'Styleguide',
 					'action' 		=> 'default',

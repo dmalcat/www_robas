@@ -1,5 +1,5 @@
-{define fullTitle}{ifset #metaTitle}{include metaTitle|striptags|trim|strip}{else}Robas repository{/ifset}{/define}
-{define fullDesc}{ifset #metaDescription}{include metaDescription|striptags|trim|strip}{else}The Universe started with The Big Bang. So every SFN project should start with The Robas.{/ifset}{/define}
+{define fullTitle}{ifset #metaTitle}{include metaTitle|striptags|trim|strip}{else}Robas Development{/ifset}{/define}
+{define fullDesc}{ifset #metaDescription}{include metaDescription|striptags|trim|strip}{else}Zdravé a účelné bydlení je naší prioritou.{/ifset}{/define}
 
 <!DOCTYPE html>
 <html lang="cs">
@@ -24,7 +24,7 @@
 	{* Fonts *}
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
 	{* CSS files *}
 	<link rel="stylesheet" href="{$basePath . '/assets/dist/css/1-vendor.min.css'|asset}">
@@ -41,6 +41,7 @@
 	<script src="{$basePath . '/assets/dist/js/svg.min.js'|asset}"></script>
 	<script src="{$basePath . '/assets/dist/js/hamburger.min.js'|asset}"></script>
 	<script src="{$basePath . '/assets/dist/js/smooth-scroll.min.js'|asset}"></script>
+	<script src="{$basePath . '/assets/js/libs/baguetteBox.js'|asset}"></script>
 	<script src="{$basePath . '/assets/js/libs/slick.min.js'|asset}"></script>
 	<script defer src="{$basePath . '/assets/cookie-consent/dist/js/cookies.min.js'|asset}"></script>
 	<script src="{$basePath . '/assets/dist/js/main.min.js'|asset}"></script>

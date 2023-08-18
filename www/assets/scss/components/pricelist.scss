@@ -1,0 +1,25 @@
+.pricelist {
+    width: 100%;
+    font-family: $font-opensans;
+    font-size: 18px;
+    font-weight: 300;
+    tr {
+        border-bottom: 1px solid #383838;
+    }
+    
+    th {
+        text-align: left;
+        text-transform: uppercase;
+        color: #383838;
+    }
+
+    td, th {
+        
+        padding: 7px 0;
+    }
+
+    .pricelist__available {
+        color: #9dc35a;
+        font-weight: bold;
+    }
+}

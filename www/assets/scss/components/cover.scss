@@ -32,6 +32,26 @@
 	}
 
 	h1 {
+		font-size: 120px;
+		color: $blue;
+		border-bottom: 3px solid $gold;
+		padding-bottom: 100px;
+		margin-bottom: 150px;
+		@media screen and (max-width: 1075px) {
+			font-size: 80px;
+			padding-bottom: 75px;
+			margin-bottom: 0;
+		}
+	}
+}
 
+.cover--projects {
+	h1 {
+		.subheadline {
+			font-size: 30px;
+			margin-bottom: 0;
+			text-transform: none;
+			color: $white;
+		}
 	}
 }

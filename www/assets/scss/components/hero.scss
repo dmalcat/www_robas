@@ -10,6 +10,20 @@
     border-width: 6px 0 6px 6px;
 	border-style: solid;
     border-color: $gold;
+    @media screen and (max-width: 1230px) {
+        width: 90%;
+        box-sizing: border-box;
+        padding: 2rem 2.5rem;
+    }
+
+    @media screen and (max-width: 1070px) {
+        width: 95%;
+    }
+
+    @include max480px {
+        padding: 1.5rem;
+    }
+
     &:before, 
     &:after {
         content: '';
@@ -40,14 +54,28 @@
 
         @media screen and (max-width: 1270px) {
 			font-size: $hero-font-size - 0.5rem;
+            br {
+                display: none;
+            }
 		}
 
-		@media screen and (max-width: 830px) {
-			font-size: $hero-font-size - 1rem;
-		}
+        @include max940px {
+            font-size: 3.5rem;
+        }
+
+        @include max480px {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
 
 		@include max375px {
 			font-size: $hero-font-size - 0.5rem;
 		}
 	}
+
+    .button {
+        @include max940px {
+            display: inline-flex;
+        }
+    }
 }

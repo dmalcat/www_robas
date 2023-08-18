@@ -5,11 +5,31 @@
 
 <section class="cover">
 	<div class="cover__visual">
-		<div class="cover__visual-inner">
-			<picture class="cover__image">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_1920.png" media="(max-width: 1920px)" type="image/png">
-				<img src="{$basePath}/assets/images/content/cover/cover_1920.png" alt="">
-			</picture>
+		<div class="cover__visual-inner" id="hp-slider">
+			<div class="cover__slide">
+				<picture class="cover__image">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_1.jpg" media="(max-width: 640px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_1.jpg" media="(max-width: 940px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_1.jpg" media="(max-width: 1920px)" type="image/jpeg">
+					<img src="{$basePath}/assets/images/content/cover/cover_1.jpg" alt="">
+				</picture>
+			</div>
+			<div class="cover__slide">
+				<picture class="cover__image">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_2.jpg" media="(max-width: 640px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_2.jpg" media="(max-width: 940px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_2.jpg" media="(max-width: 1920px)" type="image/jpeg">
+					<img src="{$basePath}/assets/images/content/cover/cover_2.jpg" alt="">
+				</picture>
+			</div>
+			<div class="cover__slide">
+				<picture class="cover__image">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_3.jpg" media="(max-width: 640px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_3.jpg" media="(max-width: 940px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_3.jpg" media="(max-width: 1920px)" type="image/jpeg">
+					<img src="{$basePath}/assets/images/content/cover/cover_3.jpg" alt="">
+				</picture>
+			</div>
 		</div>
 	</div>
 
@@ -42,7 +62,7 @@
 			</div>
 			<div id="project-slider">
 				<div class="projectsSlider__item">
-					<a class="projectsSlider__inner" href="">
+					<a class="projectsSlider__inner" n:href="Projects:javorovaDobruska">
 						<h3>
 							Bytové domy <br>
 							Javorová - Dobruška

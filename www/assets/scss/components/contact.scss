@@ -2,10 +2,12 @@
     margin-bottom: 0;
     .contact__row {
         display: flex;
+        flex-flow: row wrap;
     }
 
     .contact__col {
         padding: 5rem 0;
+        
     }
 
     .contact__col--info {
@@ -14,21 +16,41 @@
         background-color: #383838;
         color: $white;
         width: 40%;
+        @include max940px {
+            width: 100%;
+            justify-content: center;
+            padding: 4rem 2rem;
+        }
+
         .contact__inner {
             max-width: 330px;
             width: 100%;
             padding-right: 5rem;
             box-sizing: border-box;
+            @include max940px {
+                max-width: 100%;
+                padding-right: 0;
+            }
         }
     }
 
     .contact__col--form {
         width: 60%;
+        @include max940px {
+            width: 100%;
+            justify-content: center;
+            padding: 4rem 2rem;
+        }
+
         .contact__inner {
             padding: 0 5rem;
             max-width: 700px;
             width: 100%;
             box-sizing: border-box;
+            @include max940px {
+                max-width: 100%;
+                padding: 0;
+            }
         }
 
         h2 {

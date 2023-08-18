@@ -1,4 +1,5 @@
 @import '../config';
+@import '../core/breakpoints';
 
 section {
 	margin-bottom: $section-gutter;
@@ -10,6 +11,9 @@ section {
 	margin: 0 auto;
 	padding: 0 1rem;
 	box-sizing: border-box;
+	@include max940px {
+		padding: 0 2rem;
+	}
 }
 
 table {

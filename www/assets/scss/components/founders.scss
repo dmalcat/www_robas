@@ -3,6 +3,9 @@
     justify-content: center;
     gap: 7.5rem;
     margin: 5rem 0;
+    @include max480px {
+        flex-direction: column;
+    }
 
     .founders__item {
         display: flex;
