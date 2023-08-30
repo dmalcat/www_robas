@@ -3,29 +3,42 @@
 
 {block content}
 
+<script type="text/javascript">
+	$(function() {
+		$('#hp-slider').slick({
+			infinite: true,
+			slidesToShow: 1,
+			fade: true,
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 3000
+		});
+	});
+</script>
+
 <section class="cover">
 	<div class="cover__visual">
 		<div class="cover__visual-inner" id="hp-slider">
 			<div class="cover__slide">
 				<picture class="cover__image">
-					<source srcset="{$basePath}/assets/images/content/cover/cover_1.jpg" media="(max-width: 640px)" type="image/jpeg">
-					<source srcset="{$basePath}/assets/images/content/cover/cover_1.jpg" media="(max-width: 940px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_1_640.jpg" media="(max-width: 640px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_1_940.jpg" media="(max-width: 940px)" type="image/jpeg">
 					<source srcset="{$basePath}/assets/images/content/cover/cover_1.jpg" media="(max-width: 1920px)" type="image/jpeg">
 					<img src="{$basePath}/assets/images/content/cover/cover_1.jpg" alt="">
 				</picture>
 			</div>
 			<div class="cover__slide">
 				<picture class="cover__image">
-					<source srcset="{$basePath}/assets/images/content/cover/cover_2.jpg" media="(max-width: 640px)" type="image/jpeg">
-					<source srcset="{$basePath}/assets/images/content/cover/cover_2.jpg" media="(max-width: 940px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_2_640.jpg" media="(max-width: 640px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_2_940.jpg" media="(max-width: 940px)" type="image/jpeg">
 					<source srcset="{$basePath}/assets/images/content/cover/cover_2.jpg" media="(max-width: 1920px)" type="image/jpeg">
 					<img src="{$basePath}/assets/images/content/cover/cover_2.jpg" alt="">
 				</picture>
 			</div>
 			<div class="cover__slide">
 				<picture class="cover__image">
-					<source srcset="{$basePath}/assets/images/content/cover/cover_3.jpg" media="(max-width: 640px)" type="image/jpeg">
-					<source srcset="{$basePath}/assets/images/content/cover/cover_3.jpg" media="(max-width: 940px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_3_640.jpg" media="(max-width: 640px)" type="image/jpeg">
+					<source srcset="{$basePath}/assets/images/content/cover/cover_3_940.jpg" media="(max-width: 940px)" type="image/jpeg">
 					<source srcset="{$basePath}/assets/images/content/cover/cover_3.jpg" media="(max-width: 1920px)" type="image/jpeg">
 					<img src="{$basePath}/assets/images/content/cover/cover_3.jpg" alt="">
 				</picture>
@@ -68,23 +81,26 @@
 							Javorová - Dobruška
 						</h3>
 						<span class="projectsSlider__img">
+							<span class="projectsSlider__badge projectsSlider__badge--selling">Právě prodáváme</span>
 							<img src="{$basePath}/assets/images/content/projects/javorova.png" alt="">
-							<span class="button button--white">Více</span>
+							<span class="button button--white">Detail</span>
 						</span>
 					</a>
 				</div>
 				<div class="projectsSlider__item">
-					<a class="projectsSlider__inner" href="">
+					<a class="projectsSlider__inner" n:href="Projects:kostelniHlavno">
 						<h3>
 							Bytový dům <br>
 							Kostelní Hlavno
 						</h3>
 						<span class="projectsSlider__img">
+							<span class="projectsSlider__badge projectsSlider__badge--done">Realizováno</span>
 							<img src="{$basePath}/assets/images/content/projects/kostelni-hlavno.png" alt="">
-							<span class="button button--white">Více</span>
+							<span class="button button--white">Detail</span>
 						</span>
 					</a>
 				</div>
+				{*}
 				<div class="projectsSlider__item">
 					<a class="projectsSlider__inner">
 						<h3>
@@ -97,39 +113,43 @@
 						</span>
 					</a>
 				</div>
+				{*}
 				<div class="projectsSlider__item">
-					<a class="projectsSlider__inner">
+					<a class="projectsSlider__inner" n:href="Projects:jesenice">
 						<h3>
 							Bytový dům <br>
 							Jesenice
 						</h3>
 						<span class="projectsSlider__img">
+							<span class="projectsSlider__badge projectsSlider__badge--done">Realizováno</span>
 							<img src="{$basePath}/assets/images/content/projects/jesenice.png" alt="">
-							<span class="button button--black">Více</span>
+							<span class="button button--white">Detail</span>
 						</span>
 					</a>
 				</div>
 				<div class="projectsSlider__item">
-					<a class="projectsSlider__inner">
+					<a class="projectsSlider__inner" n:href="Projects:rezidenceNovyHradec">
 						<h3>
 							Rezidence <br>
 							Nový Hradec Králové
 						</h3>
 						<span class="projectsSlider__img">
+							<span class="projectsSlider__badge projectsSlider__badge--done">Realizováno</span>
 							<img src="{$basePath}/assets/images/content/projects/novy-hradec.png" alt="">
-							<span class="button button--white">Více</span>
+							<span class="button button--white">Detail</span>
 						</span>
 					</a>
 				</div>
 				<div class="projectsSlider__item">
-					<a class="projectsSlider__inner">
+					<a class="projectsSlider__inner" n:href="Projects:hostivar">
 						<h3>
 							Polyfunkční dům <br>
 							Hostivař
 						</h3>
 						<span class="projectsSlider__img">
+							<span class="projectsSlider__badge projectsSlider__badge--done">Realizováno</span>
 							<img src="{$basePath}/assets/images/content/projects/hostivar.png" alt="">
-							<span class="button button--white">Více</span>
+							<span class="button button--white">Detail</span>
 						</span>
 					</a>
 				</div>
@@ -187,7 +207,7 @@
 	</div>
 
 	<div class="row row--center">
-		<a href="#o-nas" class="button button--white">Dozvědět se více</a>
+		<a n:href="Services:default" class="button button--white">Dozvědět se více</a>
 	</div>
 </section>
 
@@ -201,22 +221,24 @@
 						<div class="selling__col selling__col--copy">
 							<h2>
 								Bytové domy <br>
-								Javorová - Dobruška
+								Javorová
 							</h2>
+
+							<strong class="selling__type">Investiční příležitost</strong>
 
 							<p>
 								Nabízíme Vám projekt k výstavbě tří až čtyř bytových domů ve městě Dobruška, které je druhé největší město v okrese Rychnov nad Kněžnou v Královéhradeckém kraji a leží v podhůří Orlických hor v údolí Zlatého potoka. 
 							</p>
 
 							<p>
-								Projekt disponuje právoplatným územním rozhodnutím. 
+								Zahájení prodeje bude uskutečněno po získání právoplatného územního rozhodnutí (do konce roku 2023). 
 							</p>
 
 							<p>
 								Cena a veškeré další podklady na vyžádání. 
 							</p>
 
-							<a href="" class="button button--gold">Dozvědět se více</a>
+							<a n:href="Projects:javorovaDobruska" class="button button--gold">Dozvědět se více</a>
 						</div>
 					
 						<div class="selling__col selling__col--images">
@@ -228,26 +250,42 @@
 					<div class="selling__inner">
 						<div class="selling__col selling__col--copy">
 							<h2>
-								Bytové domy <br>
-								Javorová - Dobruška
+								Rodinné domy <br>
+								Bousov - prodej parcel
 							</h2>
 
 							<p>
-								Nabízíme Vám projekt k výstavbě tří až čtyř bytových domů ve městě Dobruška, které je druhé největší město v okrese Rychnov nad Kněžnou v Královéhradeckém kraji a leží v podhůří Orlických hor v údolí Zlatého potoka. 
+								V obci Dolní Bousov, okres Mladá Boleslav Vám nabízíme 6 stavebních parcel, určených k výstavbě rodinných domů. Získané stavební povolení v právní moci na sítě a komunikaci. Elektřina, voda, kanalizace, chodník, silnice a osvětlení budou hotové na pozemcích do konce roku 2023.
 							</p>
 
 							<p>
-								Projekt disponuje právoplatným územním rozhodnutím. 
+								Exkluzivní nabídka na pomezí Českého ráje.
 							</p>
 
-							<p>
-								Cena a veškeré další podklady na vyžádání. 
-							</p>
-
-							<a href="" class="button button--gold">Dozvědět se více</a>
+							<a n:href="Projects:bousov" class="button button--gold">Dozvědět se více</a>
 						</div>
 						<div class="selling__col selling__col--images">
-							<img class="selling__img" src="{$basePath}/assets/images/content/selling/javorova.png" alt="">
+							<img class="selling__img" src="{$basePath}/assets/images/content/selling/bousov.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="selling__item">
+					<div class="selling__inner">
+						<div class="selling__col selling__col--copy">
+							<h2>
+								Rodinné domy <br>
+								Žižice - prodej <br>
+								parcel
+							</h2>
+
+							<p>
+								Text připravujeme.
+							</p>
+
+							<a n:href="Projects:zizice" class="button button--gold">Dozvědět se více</a>
+						</div>
+						<div class="selling__col selling__col--images">
+							<img class="selling__img" src="{$basePath}/assets/images/content/selling/bousov.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -298,6 +336,8 @@
 				<span class="founders__position">Zakladatel a majitel</span>
 			</div>
 		</div>
+
+		<a n:href="About:default" class="button button--blue">Více informací</a>
 	</div>
 </section>
 

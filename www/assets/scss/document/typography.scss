@@ -30,8 +30,10 @@ h3 {
 }
 
 h4 {
+	font-family: $font-playfair;
 	font-size: $h4-font-size;
 	line-height: 1.05;
+	color: #383838;
 }
 
 .subheadline {
@@ -46,11 +48,7 @@ h4 {
 p {
 	font-family: $font-opensans;
 	font-size: $base-paragraph-size;
-}
-
-.perex {
-	font-size: 20px;
-	font-weight: bold;
+	line-height: 1.75;
 }
 
 strong {
@@ -69,10 +67,11 @@ a {
 	}
 }
 
-ul {
+ul, ol {
 	li {
 		font-family: $font-opensans;
 		font-weight: 300;
 		font-size: 18px;
+		color: $blue;
 	}
 }

@@ -1,0 +1,62 @@
+.article {
+    .article__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5rem 2.5rem;
+        flex-flow: row wrap;
+        margin: 5rem 0;
+    }
+
+    .article__col {
+        width: calc(50% - 2.5rem);
+    }
+
+    h2 {
+        font-family: $font-opensans;
+        font-size: 25px;
+        color: #c3a15a;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        color: $blue;
+    }
+
+    .perex {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .article__section {
+        margin: 4rem 0;
+    }
+
+    .article__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding-left: 0;
+        margin-top: 3rem;
+        li {
+            width: 30%;
+        }
+
+        .number {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            //background-color: $blue;
+            border: 3px solid $gold;
+            color: $blue;
+            font-weight: bold;
+            font-size: 40px;
+        }
+    }
+}

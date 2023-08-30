@@ -3,17 +3,6 @@ $(function() {
 
 	var scroll = new SmoothScroll('a[href*="#"]');
 
-	$('#hp-slider').slick({
-		infinite: true,
-		slidesToShow: 1,
-		fade: true,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 3000
-		//prevArrow: $('#selling-slider-prev'),
-      	//nextArrow: $('#selling-slider-next')
-	});
-
 	$('#project-slider').slick({
 		infinite: true,
 		slidesToShow: 3,

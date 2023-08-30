@@ -1,0 +1,82 @@
+{block content}
+
+<section class="cover cover--projects">
+	<div class="cover__visual">
+		<div class="cover__visual-inner">
+			<picture class="cover__image">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1920.png" media="(max-width: 1920px)" type="image/png">
+				<img src="{$basePath}/assets/images/content/cover/cover_1920.png" alt="">
+			</picture>
+		</div>
+	</div>
+
+	<div class="cover__wrapper wrapper">
+		<div class="hero">
+			<h1 n:block=title>
+				<span class="subheadline">Pozemky</span>
+                Zvolněves
+			</h1>
+		</div>
+	</div>
+</section>
+
+<section class="projectDetail">
+    <div class="projectDetail__wrapper wrapper">
+        <h2>Typ projektu</h2>
+        <h3>Příprava a prodej stavebních pozemků</h3>
+
+        <p>
+            Vydání územního rozhodnutí na dělení a scelování pozemku, vydání územního rozhodnutí na výstavbu vodovodních a kanalizačních přípojek, prodej jednotlivých parcel.
+        </p>
+        
+        <p>
+            Výše uvedené ceny jsou orientační a mají pouze informativní charakter. Kupní cena bude potvrzena zástupcem prodejního oddělení a stává se závaznou v okamžiku uzavření rezervační smlouvy. Uvedené ceny jsou již po případné slevě. Ceník je platný do vydání nového ceníku, přičemž prodejce si vyhrazuje právo tento ceník kdykoliv změnit, a to až do uzavření závazné písemné rezervační smlouvy se zájemcem.
+        </p>
+        
+        {*}
+        <div class="gallery" id="projects-detail-gallery">
+            <a href="{$basePath}/assets/images/content/projects/bousov/full/1.jpg">
+                <img src="{$basePath}/assets/images/content/projects/bousov/thumb/1.jpg" alt="">
+            </a>
+            <a href="{$basePath}/assets/images/content/projects/bousov/full/2.jpg">
+                <img src="{$basePath}/assets/images/content/projects/bousov/thumb/2.jpg" alt="">
+            </a>
+        </div>
+        {*}
+    </div>
+</section>
+
+<section class="projects projects--full">
+    <div class="projects__wrapper wrapper">
+        <h2>Podobné projekty</h2>
+
+        <div class="projectsSlider">
+            <div class="projectsSlider__item">
+                <a class="projectsSlider__inner" href="">
+                    <h3>
+                        Stavební parcely <br>
+                        Žižice
+                    </h3>
+                    <span class="projectsSlider__img">
+                        <span class="projectsSlider__badge projectsSlider__badge--selling">Právě prodáváme</span>
+                        <img src="{$basePath}/assets/images/content/projects/parcely-zizice.png" alt="">
+                        <span class="button button--white">Detail</span>
+                    </span>
+                </a>
+            </div>
+            <div class="projectsSlider__item">
+                <a class="projectsSlider__inner" n:href="Projects:bousov">
+                    <h3>
+                        Rodinné domy <br>
+                        Bousov - prodej parcel
+                    </h3>
+                    <span class="projectsSlider__img">
+                        <span class="projectsSlider__badge projectsSlider__badge--selling">Právě prodáváme</span>
+                        <img src="{$basePath}/assets/images/content/projects/rd-dolni-bousov.png" alt="">
+                        <span class="button button--white">Detail</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

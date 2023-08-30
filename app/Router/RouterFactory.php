@@ -90,6 +90,42 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/projekty/rodinne-domy-zizice-prodej-parcel', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'zizice',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/projekty/rezidence-novy-hradec', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'rezidenceNovyHradec',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/projekty/bytove-jednotky-karlovy-vary', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'bytyKarlovyVary',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/projekty/pozemky-zvolneves', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'pozemkyZvolneves',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/o-nas', [
+					'presenter' 	=> 'About',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/developerske-sluzby', [
+					'presenter' 	=> 'Services',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
+				
 				$router->addRoute($basePath . $region . '/styleguide', [
 					'presenter' 	=> 'Styleguide',
 					'action' 		=> 'default',

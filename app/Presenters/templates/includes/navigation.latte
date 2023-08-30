@@ -4,16 +4,20 @@
 			<a class="navigation__link" n:href="Homepage:">Domů</a>
 		</li>
 		
-		<li n:class="navigation__item, $presenter->isLinkCurrent('Projects:default') ? navigation__item--active">
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Projects:*') ? navigation__item--active">
 			<a class="navigation__link" n:href="Projects:">Projekty</a>
 		</li>
 
-		<li class="navigation__item">
-			<a class="navigation__link" href="#o-nas">O nás</a>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Services:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Services:default">Developerské služby</a>
+		</li>
+		
+		<li n:class="navigation__item, $presenter->isLinkCurrent('About:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="About:default">O nás</a>
 		</li>
 
 		<li class="navigation__item">
-			<a class="navigation__link" href="#kontakt">Kontakt</a>
+			<a class="navigation__link" n:href="Homepage:default#kontakt">Kontakt</a>
 		</li>
 	</ul>
 </nav>

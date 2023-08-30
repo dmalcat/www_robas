@@ -41,7 +41,14 @@
     h2 {
         font-size: 50px;
         color: #383838;
-        margin-bottom: 4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .selling__type {
+        display: block;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        color: $gold;
     }
 
     .button {
