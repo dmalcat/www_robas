@@ -18,19 +18,19 @@
 		<tr>
 			<td></td>
 			<td>
-				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Jméno: {$name}</p>
+				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Jméno a příjmení: {$name} {$surname}</p>
 			</td>
 		</tr>
-		<tr n:if="$contact">
+		<tr n:if="$email">
 			<td></td>
 			<td>
-				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Kontakt: {$contact}</p>
+				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Email: {$email}</p>
 			</td>
 		</tr>
-		<tr n:if="$company">
+		<tr n:if="$phone">
 			<td></td>
 			<td>
-				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Společnost: {$company}</p>
+				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Telefon: {$phone}</p>
 			</td>
 		</tr>
 		<tr n:if="$message">
@@ -43,7 +43,7 @@
 			<td></td>
 			<td>
 				<p style="font-family: Arial; font-size: 10px; line-height: 20px;"><br> Odesláno: {date('d. m. Y / H:i:s')}<br><br></p>
-				<p style="font-family: Arial; font-size: 10px; line-height: 20px;">{$url}</p>
+				<p style="font-family: Arial; font-size: 10px; line-height: 20px;">Odkaz na stránku, ze které byl dotaz odeslán: {$url}</p>
 			</td>
 		</tr>
 	</table>

@@ -69,12 +69,12 @@ class ContactForm
 
             if (strlen($values->city) == 0) {
                 $values->url = $this->url;
-                $latte = new \Latte\Engine;
+				$latte = new \Latte\Engine;
                 $mail = new \Nette\Mail\Message;
-                $mail->setFrom('dexport.cz <no-reply@dexport.cz>')
-					->addTo('info@dexport.cz')
-                    ->addBcc('davidmalcat@gmail.com')
-                    ->setSubject('Kontaktní formulář | dexport.cz')
+                $mail->setFrom($values->email)
+					->addTo('david@malcat.cz')
+                    //->addBcc('davidmalcat@gmail.com')
+                    ->setSubject('Kontaktní formulář | robasdevelopment.com')
                     ->setHtmlBody(
                         $latte->renderToString(__DIR__.'/../Presenters/templates/emails/contactEmail.latte', $values)
                     );

@@ -1,0 +1,16 @@
+.flash {
+    padding: 1rem 0;
+    p {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    &.success,
+    &.info  {
+        background-color: #457D4D;
+    }
+
+    &.warning {
+        background-color: #7D4545;
+    }
+}

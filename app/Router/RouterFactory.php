@@ -114,6 +114,18 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/projekty/rodinne-domy-jencice', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'jencice',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/projekty/apartmany-benesova-hora', [
+					'presenter' 	=> 'Projects',
+					'action' 		=> 'benesovaHora',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
 					'action' 		=> 'default',
@@ -125,7 +137,7 @@ final class RouterFactory
 					'action' 		=> 'default',
 					'region' 		=> $region
 				]);
-				
+
 				$router->addRoute($basePath . $region . '/styleguide', [
 					'presenter' 	=> 'Styleguide',
 					'action' 		=> 'default',

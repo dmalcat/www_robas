@@ -167,7 +167,7 @@
         gap: 40px;
         margin-top: 40px;
         
-        a {
+        a, span {
             text-decoration: none;
             width: calc(50% - 20px);
             img {
@@ -195,6 +195,10 @@
 .projectDetail--location {
     padding: 100px 0;
     background-color: $gold;
+    .projectDetail__wrapper {
+        padding-bottom: 0;
+    }
+
     h2, p {
         color: $white;
     }
